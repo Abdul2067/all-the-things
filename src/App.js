@@ -6,6 +6,7 @@ import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
+import AwesomeThings from './pages/AwesomeThings/AwesomeThings'
 
 const App = () => {
   const [shahzadsThings, setShazadsThings] = useState([
@@ -129,6 +130,14 @@ const App = () => {
     },
   ])
 
+  const [jaredsThings, setJaredsThings] = useState([
+    {
+      name: "nerdy stuff",
+      image: "https://imgs.xkcd.com/comics/functional.png",  
+      attributes: ["efficient", "reusability", "not a taco", "beautiful"],
+    },
+  ])
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -148,6 +157,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route 
+        path="the-awesome-things"
+        element={<AwesomeThings things={jaredsThings} />}
       />
     </Routes>
   )
