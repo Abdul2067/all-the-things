@@ -5,6 +5,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
+import KevsThings from './pages/KevsThings/KevsThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -131,29 +132,29 @@ const App = () => {
 
   const [kevsThings, setKevsThings] = useState([
     {
-      name: '',
-      image: '',
-      attributes: []
+      name: 'Bike',
+      image: 'https://i.imgur.com/VSOlAbp.jpg',
+      attributes: ['fast', 'gets me around town', 'improves mental AND physical health']
     },
     {
-      name: '',
-      image: '',
-      attributes: []
+      name: 'Olympus XA2',
+      image: 'https://assets.community.lomography.com/e8/13b952dbbc1b69718254713980f1f928051adf/1216x818x2.jpg?auth=693a3ff62540fc343e26f38d503eb4d40bebee78',
+      attributes: ['tiny', 'takes decent photos', 'quiet', 'easily concealable']
     },
     {
-      name: '',
-      image: '',
-      attributes: []
+      name: 'Miller High Life',
+      image: 'https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b23b8778-bd7f-4f79-b5a7-70c47ef49c8c.jpg',
+      attributes: ['The Champagne of Beers', 'refreshing', 'crispy boi']
     },
     {
-      name: '',
-      image: '',
-      attributes: []
+      name: 'Boss CE-2',
+      image: 'https://images.craigslist.org/00t0t_3JHVhxTKWKTz_0MM0MM_1200x900.jpg',
+      attributes: ['lush', 'makes your guitar sound like the 80s', 'indestructible']
     },
     {
-      name: '',
-      image: '',
-      attributes: []
+      name: 'Jackets',
+      image: 'https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2012/7/25/0/iStock-000015322884-coats-on-hangers-in-a-closet_s4x3.jpg.rend.hgtvcom.1280.914.suffix/1405444409261.jpeg',
+      attributes: ['warm', 'they make you look fly', 'get compliments']
     },
   ])
 
@@ -176,6 +177,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/kevins-things"
+        element={<KevsThings things={kevsThings} />}
       />
     </Routes>
   )
