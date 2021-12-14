@@ -129,6 +129,34 @@ const App = () => {
     },
   ])
 
+  const [kevinsThings, setKevinsThings] = useState([
+    {
+      name: '',
+      image: '',
+      attributes: []
+    },
+    {
+      name: '',
+      image: '',
+      attributes: []
+    },
+    {
+      name: '',
+      image: '',
+      attributes: []
+    },
+    {
+      name: '',
+      image: '',
+      attributes: []
+    },
+    {
+      name: '',
+      image: '',
+      attributes: []
+    },
+  ])
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
