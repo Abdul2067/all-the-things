@@ -129,7 +129,7 @@ const App = () => {
     },
   ])
 
-  const [kevinsThings, setKevinsThings] = useState([
+  const [kevsThings, setKevsThings] = useState([
     {
       name: '',
       image: '',
